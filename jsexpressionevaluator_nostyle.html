@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8">
+<title>JavaScript Expression Evaluator - by Emily Kelton</title>
+     <meta name="author" content="Emily Kelton" />
+     <meta name="keywords" content="Project 1, CIS 242, Winter 2013" />
+     <meta name="description" content="A simple JavaScript Expression Evaluator" />
+     <link rel="stylesheet" type="text/css" href="calcstyle.css">
+    
+    <script type="text/javascript">
+    
+        function calcEquationValue(n) {
+
+             calc.equation.value += n;
+
+         }
+
+        function total() {
+            calc.equation.value = eval(calc.equation.value);
+
+        }
+
+    
+    </script>
+
+</head>
+
+<body>
+<div class= "container">
+<div class= "calculator">
+    <h2>JavaScript Expression Evaluator</h2>
+    <form name="calc" action="#" id="calc">
+    <table>
+        <tr>
+            <td colspan="3">
+                <input type="text" id="equation" name="equation" size="50" readonly="readonly" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3"> </td>
+        </tr>
+        <tr>
+            <td><input type="button" name="seven" value=" 7 " onClick="return calcEquationValue('7');"></td>
+            <td><input type="button" name="eight" value=" 8 " onClick="return calcEquationValue('8');"></td>
+            <td ><input type="button" name="nine" value=" 9 " onClick="return calcEquationValue('9');"></td>
+        </tr>
+        <tr>
+            <td ><input type="button" name="four" value=" 4 " onClick="return calcEquationValue('4');"></td>
+            <td ><input type="button" name="five" value=" 5 " onClick="return calcEquationValue('5');"></td>
+            <td ><input type="button" name="six" value=" 6 " onClick="return calcEquationValue('6');"></td>
+        </tr>
+        <tr>
+            <td ><input type="button" name="one" value=" 1 " onClick="return calcEquationValue('1');"></td>
+            <td ><input type="button" name="two" value=" 2 " onClick="return calcEquationValue('2');"></td>
+            <td ><input type="button" name="three" value=" 3 " onClick="return calcEquationValue('3');"></td>
+        </tr>
+        <tr>
+            <td > </td>
+            <td ><input type="button" name="zero" value=" 0 " onClick="return calcEquationValue('0');"></td>
+            <td ><input type="button" name="dot" value=" . " onClick="return calcEquationValue('.');"></td>
+        </tr>
+        <tr>
+            <td  colspan="3"><hr /></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td ><input type="button" name="division" value=" / " onClick="return calcEquationValue('/');"></td>
+            <td ><input type="button" name="multiplication" value=" * " onClick="return calcEquationValue('*');"></td>
+            <td ><input type="button" name="subtraction" value=" - " onClick="return calcEquationValue('-');"></td>
+            <td ><input type="button" name="addition" value=" + " onClick="return calcEquationValue('+');"></td>
+        </tr>
+        <tr>
+            <td ><input type="button" name="openPar" value=" ( " onClick="return calcEquationValue('(');"></td>
+            <td ><input type="button" name="closePar" value=" ) " onClick="return calcEquationValue(')');"></td>
+            <td ><input type="button" name="compEqual" value=" == " onClick="return calcEquationValue('==');"></td>
+            <td ><input type="button" name="modulas" value=" % " onClick="return calcEquationValue('%');"></td>
+        </tr>
+        <tr>
+            <td ><input type="button" name="lessThan" value=" < " onClick="return calcEquationValue('<');"></td>
+            <td ><input type="button" name="equal" value=" = " onClick="return calcEquationValue('=');"></td>
+            <td ><input type="button" name="greaterThan" value=" &gt; " onClick="return calcEquationValue('>');"></td>
+            <td ><input type="button" name="or" value=" || "  onClick="return calcEquationValue('||');"></td>
+        </tr>
+        <tr>
+            <td ><input type="button" name="true" value=" true " onClick="return calcEquationValue('true');"></td>
+            <td ><input type="button" name="false" value=" false " onClick="return calcEquationValue('false');"></td>
+            <td ><input type="button" name="not" value=" ! " onClick="return calcEquationValue('!');"></td>
+           
+            <td ><input type="button" name="and" value=" &amp;&amp; " onClick="return calcEquationValue('&amp;&amp;');"></td>
+        </tr>
+          <tr>
+            <td colspan="4"><hr /></td>
+        </tr>
+        <tr>
+            <td colspan="2" ><input type="button" name="eval" value="evaluate" id="evaluate" onClick="return total();"></td>
+            <td colspan="2" ><input type="button" name="clear" value="clear" onClick="calc.equation.value = ''"></td>
+        </tr>
+        <tr>
+            <td colspan="3"> </td>
+        </tr>
+    </form>
+</div>
+</div>
+</body>
+</html>

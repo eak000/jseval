@@ -1,0 +1,50 @@
+body {
+	background-color: rgba(216, 215, 205, 0.73);
+}
+
+.container {
+	padding: 25px;
+}
+
+.calculator {
+	background-color: #d3d95b;
+	border: thin solid black;
+	border-radius: 10px;
+	width: 500px;
+	padding: 25px;
+	margin: 0 auto;
+}
+
+h2 {
+	width: 75%;
+	margin: 10px auto;
+	font-family: Arial, sans-serif;
+}
+
+table {
+	width: 500px;
+	padding: 5px;
+}
+
+tr {
+	text-align: center;
+}
+
+#equation {
+	border: 2px solid black;
+	font-family: Arial, sans-serif;
+	background-color: white;
+	color: black;
+	text-align: right;
+	padding: 5px;
+	margin-bottom: 15px;
+}
+
+form input[type=button] {
+	width: 50px;
+	font-size: 2em;
+}
+
+#evaluate{
+	width: 75px;
+}
